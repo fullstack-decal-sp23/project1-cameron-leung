@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cameron's Portfolio 2023</title>
+    <meta name = "author" content = "Cameron">
+    <link rel = "stylesheet" href = "styles.css">
+</head>
+<body style="background-color:#e0cab1;">
+    <h1 style = "text-align: center;">Hey, I'm Cameron</h1>
+    <a href = "https://drive.google.com/file/d/1iSTNFEteL9fGVL5u-8wV1rKOv6HmlT4E/view?usp=sharing" target="_blank"><button class = "button"><img src="prof.jpg" alt = "Cameron's profile picture" id = "prof_pic"/></button></a>
+    
+    <h3>Welcome to my Site!</h3>
+    <p>I am a freshman at University of California, Berkeley as a computer science major hailing from Burlingame, CA(a suburb in the Bay Area). I've loved coding ever since I was in elementary school, starting with JavaScript and Scratch on my own. After taking high school, Stanford, and Berkeley summer courses, I'm continuing my journey into computer science classes at school. I'm currently exploring college life and the languages Java, JavaScript, Python, CSS and HTML.</p>
+    <p>Outside cs, I love spending time with my friends and family eating out, visiting San Francisco, or just talking about life. Simple things like walking my dog, listening to music, and sitting in the sun make me feel better and I also really like contemporary novels, fashion, and drawing</p>
+    
+    <h2>Projects</h2>
+    <div class="grid-container-3">
+        <div class="grid-item"><img src="uni.jpeg" alt = "unicorn sign image" class = "grid-image"/></div>
+        <div class="grid-item"><img src="lifesim.jpg" alt = "animated simulation image" class = "grid-image"/></div>
+        <div class="grid-item"><img src="closet.jpeg" alt = "closet image" class = "grid-image" style="width:90%;"/></div>
+        <div class="grid-item"><h5>Unicorn Adoption Agency</h5></div>
+        <div class="grid-item"><h5>Animated Interactive Simulation</h5></div>
+        <div class="grid-item"><h5>Virtual Closet Organizer</h5></div>
+        <div class="grid-item">Java in Repl.it: Developed online database of unicorn adoption agency with commands for registering, riding, and adopting unicorns in the stables. Nested properties included stables, unicorns, age, color, name, riders, duration ridden, and ownership. Incorporated abstraction, loops, classes, and user input</div>
+        <div class="grid-item">JavaScript in ps.5 and Arduino: User interacts with buttons, microphone, joysticks, potentiometers, the computer mouse, and the computer keyboard to operate an artistic representation of one’s cycle of life, altering colors, music, avatar movement, surrounding avatars' behaviors, and sizing. Employed lerp, arrays, classes, functions, noise, map, loops, conditionals, and user interaction
+            </div>
+        <div class="grid-item">Java in Repl.it: Developed a virtual shoe closet with organizing functions based on brand, color, price, and style properties. User can add shoes, delete shoes, view shoes, and find fakes. Employed inheritance, interfaces, super/subclasses, loops, and user input
+            </div>
+    </div>
+    <h2>Currently</h2>
+    <div class="grid-container-3">
+        <div class = "grid-item"><img src="wdb.png" class = "grid-logo"/></div>
+        <div class = "grid-item"><img src="codify.png" class = "grid-logo"/></div>
+        <div class = "grid-item"><img src = "posto.png" class = "grid-logo"/></div>
+        <div class = "grid-item"></div>
+    </div>
+    <br><br>
+    <h6>tell me about yourself</h6>
+    <form>
+        <label>
+            First Name:
+            <input class = "input" type = "text" placeholder = "Dora" />
+        </label>
+        <br>
+        <label>
+            Last Name:
+            <input class = "input" type = "text" placeholder = "TheExplorer"/>
+        </label>
+        <br><br>
+        <input class = "submit" type = "submit" value = "submit" onClick="writeParagraph()">
+        <p class="message"></p>
+    </form>
+    <script>
+        const firstName = document.querySelector(".input")[1];
+        const lastName = document.querySelector(".input")[2];
+        const message = document.querySelector(".message")
+        function writeParagraph() {
+            message.innerText = "Thanks for visiting,", firstName.value, lastName.value;
+        }
+    </script>
+    <p class="message"></p>
+
+    <br>
+    <h4>Contacts</h4>
+    <div class="icon-grid" style="justify-content: center">
+        <a href="https://www.linkedin.com/in/cameron-leung-7a826717a/" target="_blank" alt="linkedin icon"><img class="icon" src="linkedin logo.png"></a>
+        <a href = "mailto: cameronmleung@gmail.com" target = "_blank" alt="mail icon"><img class="icon" src="mail logo.png" target="_blank"></a>
+        <a href="https://www.instagram.com/cml__art/?hl=en" target="_blank" alt="instagram icon"><img class="icon" src="instagram logo.png"></a>
+        <a href="https://www.facebook.com/profile.php?id=100086127787209" target="_blank" alt="facebook icon"><img class="icon" src="facebook logo.png"></a>
+        <a href="https://github.com/cameron-leung" target="_blank" alt="github icon"><img class="icon" src="git logo.png"></a>
+    </div>
+</body>
+</html>
